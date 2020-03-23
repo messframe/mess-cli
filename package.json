@@ -1,0 +1,34 @@
+{
+  "name": "mess-cli",
+  "version": "0.0.1",
+  "description": "A front-end microservice construction tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justwiner/mess-cli.git"
+  },
+  "keywords": [],
+  "author": "justwiner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justwiner/mess-cli/issues"
+  },
+  "homepage": "https://github.com/justwiner/mess-cli#readme",
+  "bin": {
+    "mess": "./bin/mess.js",
+    "mess-init": "./bin/mess-init.js",
+    "mess-add": "./bin/mess-add.js",
+    "mess-bat": "./bin/mess-bat.js"
+  },
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "commander": "^5.0.0",
+    "download-git-repo": "^3.0.2",
+    "inquirer": "^7.1.0",
+    "ora": "^4.0.3"
+  },
+  "devDependencies": {}
+}
