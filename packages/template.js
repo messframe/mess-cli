@@ -1,5 +1,5 @@
 exports = module.exports = {
-    vue: 'github:justwiner/mess-vue',
-    react: 'github:justwiner/mess-react',
-    portal: 'github:justwiner/mess-portal'
+    vue: 'github:messframe/mess-cli-vue',
+    react: 'github:messframe/mess-cli-react',
+    portal: 'github:messframe/mess-cli-portal'
 }
