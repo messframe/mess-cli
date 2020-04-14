@@ -62,6 +62,10 @@ download(
             filePromise.push(tools.fileStrReplaceAll(`${process.cwd()}/${projectName}/src/set-public-path.js`, [/mess_vue/g, /portal/g], [projectName, pName]))
             filePromise.push(tools.fileStrReplaceAll(`${process.cwd()}/${projectName}/public/index.html`, /mess_vue/g, projectName))
             filePromise.push(tools.fileStrReplaceAll(`${process.cwd()}/${projectName}/src/router/modulesA.js`, /mess_vue/g, projectName))
+            filePromise.push(tools.fileStrReplaceAll(`${process.cwd()}/${projectName}/src/pages/about.vue`, /mess_vue/g, projectName))
+            filePromise.push(tools.fileStrReplaceAll(`${process.cwd()}/${projectName}/src/pages/home.vue`, /mess_vue/g, projectName))
+            filePromise.push(tools.fileStrReplaceAll(`${process.cwd()}/${projectName}/src/pages/demo.vue`, /mess_vue/g, projectName))
+            filePromise.push(tools.fileStrReplaceAll(`${process.cwd()}/${projectName}/src/pages/subHome.vue`, /mess_vue/g, projectName))
             filePromise.push(tools.fileStrReplaceAll(`${process.cwd()}/${projectName}/src/index.js`, /mess_vue/g, projectName))
         }
         /**
