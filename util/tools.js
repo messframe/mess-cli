@@ -29,7 +29,7 @@ function modifyPortalConfig (path, portalName, projectName, port) {
     return new Promise((resolve, reject) => {
         fs.readFile(path, (err, data) => {
             if (err) reject(err);
-            let configJson = JSON.parse(data.toString().replace('\'', '\"').replace('module.exports = ', ''))
+            let configJson = JSON.parse(data.toString().replace(/\'/g, '\"').replace('module.exports = ', ''))
             configJson.components[projectName] = {
                 "moduleName": `@${portalName}/${projectName}`,
                 "origin": "http://localhost:" + port,
