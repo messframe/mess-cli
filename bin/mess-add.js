@@ -73,7 +73,7 @@ download(
          * Modify config in portal project
          */
         if (portalName) {
-            filePromise.push(tools.modifyPortalConfig(`${process.cwd()}/${portalName}/config.js`, portalName, projectName, port))
+            filePromise.push(tools.modifyPortalConfig(`${process.cwd()}/${portalName}/mess.config.js`, portalName, projectName, port))
         }
 
         Promise.all(filePromise).then(() => {
