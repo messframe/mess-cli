@@ -42,7 +42,7 @@ inquirer.prompt(question).then(answers => {
              * Modify name in project
              */
             filePromise.push(tools.fileStrReplaceAll(`${process.cwd()}/${projectName}/package.json`, /portal/g, projectName))
-            filePromise.push(tools.fileStrReplaceAll(`${process.cwd()}/${projectName}/config.js`, /portal/g, projectName))
+            filePromise.push(tools.fileStrReplaceAll(`${process.cwd()}/${projectName}/mess.config.js`, /portal/g, projectName))
             filePromise.push(tools.fileStrReplaceAll(`${process.cwd()}/${projectName}/src/common-deps.js`, /portal/g, projectName))
             filePromise.push(tools.fileStrReplaceAll(`${process.cwd()}/${projectName}/src/index.html`, /portal/g, projectName))
             filePromise.push(tools.fileStrReplaceAll(`${process.cwd()}/${projectName}/src/config.js`, /portal/g, projectName))
