@@ -54,6 +54,7 @@ download(
             filePromise.push(tools.fileStrReplaceAll(`${process.cwd()}/${projectName}/src/set-public-path.js`, [/mess_react/g, /portal/g], [projectName, pName]))
             filePromise.push(tools.fileStrReplaceAll(`${process.cwd()}/${projectName}/src/pages/App.js`, [/mess_react/g, /portal/g], [projectName, pName]))
             filePromise.push(tools.fileStrReplaceAll(`${process.cwd()}/${projectName}/src/index.js`, /mess_react/g, projectName))
+            filePromise.push(tools.fileStrReplaceAll(`${process.cwd()}/${projectName}/src/pages/page1.js`, /mess_react/g, projectName))
         } else if (templateName === 'vue') {
             filePromise.push(tools.fileStrReplaceAll(`${process.cwd()}/${projectName}/package.json`, [/mess_vue/g, /portal/g], [projectName, pName]))
             filePromise.push(tools.fileStrReplaceAll(`${process.cwd()}/${projectName}/vue.config.js`, [/mess_vue/g, /portal/g, /8237/g], [projectName, pName, port]))
